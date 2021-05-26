@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: install httpd
+      package: name=httpd status=installed
