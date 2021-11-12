@@ -8,7 +8,7 @@ resource "aws_instance" "myawsserver" {
 
   tags = {
     Name = "Gagan-devops-ec2-instance-v2"
-    env = "prod"
+    env = "development"
   }
   provisioner "local-exec" {
     command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /root/inv"
