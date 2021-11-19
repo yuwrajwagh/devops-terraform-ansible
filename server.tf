@@ -7,7 +7,7 @@ resource "aws_instance" "myawsserver" {
   key_name = "gds-import"
 
   tags = {
-    Name = "Gagan-devops-server-new"
+    Name = "Gagan-devops-server"
     env = "production"
   }
   provisioner "local-exec" {
