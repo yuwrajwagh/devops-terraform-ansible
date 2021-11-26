@@ -7,8 +7,9 @@ resource "aws_instance" "myawsserver" {
   key_name = "gds-import"
 
   tags = {
-    Name = "Gagan-devops-server"
+    Name = "Gagan-devops-server-v2"
     env = "production"
+    owner = "Gagandeep"
   }
   provisioner "local-exec" {
     command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /root/inv"
