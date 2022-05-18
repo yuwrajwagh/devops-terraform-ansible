@@ -12,7 +12,7 @@ resource "aws_instance" "myawsserver" {
     owner = "Gagandeep"
   }
   provisioner "local-exec" {
-    command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /root/inv"
+    command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /tmp/inv"
   }
 }
 
