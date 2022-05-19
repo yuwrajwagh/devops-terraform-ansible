@@ -4,10 +4,10 @@ region = "us-east-2"
 resource "aws_instance" "myawsserver" {
   ami = "ami-077e31c4939f6a2f3"
   instance_type = "t2.micro"
-  key_name = "zensar1"
+  key_name = "gagan-zensar2"
 
   tags = {
-    Name = "Gagan-devops-server-v2"
+    Name = "Gagan-DevOps-Zensar2-batch2-server"
     env = "production"
     owner = "Gagandeep"
   }
