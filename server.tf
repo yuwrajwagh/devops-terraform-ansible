@@ -8,8 +8,8 @@ resource "aws_instance" "myawsserver" {
 
   tags = {
     Name = "Raman-DevOps-Synechron-batch-server"
-    env = "production"
-    owner = "Raman"
+    env = "development"
+    owner = "Raman Khanna"
   }
   provisioner "local-exec" {
     command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /tmp/inv"
