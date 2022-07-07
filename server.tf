@@ -8,7 +8,7 @@ resource "aws_instance" "myawsserver" {
 
   tags = {
     Name = "Raman-DevOps-Synechron-batch-server"
-    env = "development"
+    env = "Production"
     owner = "Raman Khanna"
   }
   provisioner "local-exec" {
